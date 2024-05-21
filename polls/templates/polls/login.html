@@ -26,9 +26,12 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-          <br /><p>
-          <div><h6><a href="{% url 'polls:signup' %}">Belum Punya Akun?</a></h6></div></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <a href="{% url 'polls:signup' %}" class="btn btn-warning"
+              >Belum Punya Akun?</a
+            >
+          </div>
         </form>
       </div>
     </div>

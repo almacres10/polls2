@@ -9,3 +9,35 @@
 .login-container h2 {
   margin-bottom: 20px;
 }
+.button-container {
+  display: inline-block;
+}
+
+.button-container button,
+.button-container a {
+  margin-right: 5px;
+}
+
+/* SIGNUP */
+
+.signup-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup-container h1 {
+  margin-bottom: 20px;
+}
+.signup-container .form-group {
+  margin-bottom: 15px;
+}
+.signup-container button {
+  margin-right: 10px;
+}
+.signup-container a {
+  display: inline-block;
+  margin-top: 10px;
+}
