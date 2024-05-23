@@ -20,24 +20,50 @@
 
 /* SIGNUP */
 
-.signup-container {
-  max-width: 500px;
-  margin: 50px auto;
+/* Container styling */
+.container {
+  width: 50%;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.signup-container h1 {
+
+/* Heading styling */
+h1 {
+  text-align: center;
   margin-bottom: 20px;
 }
-.signup-container .form-group {
-  margin-bottom: 15px;
+
+/* Form styling */
+form {
+  width: 100%;
 }
-.signup-container button {
-  margin-right: 10px;
+
+.form-group {
+  margin-top: 20px;
 }
-.signup-container a {
+
+/* Button styling */
+.btn {
   display: inline-block;
-  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary_1 {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
 }

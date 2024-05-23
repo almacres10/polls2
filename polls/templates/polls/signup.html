@@ -1,21 +1,14 @@
 {% extends "polls/main.html" %} {% load static %} {% block content%}
 
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="signup-container">
-        <h1>Signup</h1>
-        <form method="POST">
-          {% csrf_token %} {{ form.as_p }}
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary">Signup</button>
-            <a href="{% url 'polls:login' %}" class="btn btn-link"
-              >Already have an account?</a
-            >
-          </div>
-        </form>
+  <h1>Signup</h1>
+  <form method="POST">
+      {% csrf_token %} {{ form.as_p }}
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Signup</button>
+          <a href="{% url 'polls:login' %}" class="btn btn-link">Already have an account?</a>
       </div>
-    </div>
-  </div>
+  </form>
 </div>
+
 {% endblock content %}
