@@ -1,0 +1,28 @@
+{% extends "tickets/main.html" %}
+{% load static %}
+{% block content%}
+
+    <div class="max-w-md mx-auto my-8">
+        <h2 class="text-3xl font-semibold mb-4">Login</h2>
+        <form id="loginForm" method="POST" action="/tickets/login/" class="space-y-4">
+            {% csrf_token %}
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Username:</label>
+                <input type="text" id="username" name="username" required
+                    class="mt-1 p-2 block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
+                <input type="password" id="password" name="password" required
+                    class="mt-1 p-2 block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-md focus:outline-none focus:ring focus:ring-blue-200">Login</button>
+                <a href="{% url 'tickets:signup' %}"
+                    class="text-sm text-blue-200 hover:text-blue-700">Belum Punya Akun?</a>
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

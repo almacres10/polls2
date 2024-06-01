@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls.apps.PollsConfig',
+    'tickets.apps.TicketsConfig',
     "debug_toolbar",
 ]
 
@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "polls" / "static",
+    BASE_DIR / "tickets" / "static",
     # Misal: BASE_DIR / "my_app" / "static",
 ]
 
