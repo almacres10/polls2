@@ -1,4 +1,4 @@
-{% load static %}
+{% extends "tickets/main.html" %} {% load static %}
 
 <link rel="stylesheet" href="{% static 'tickets/css/style.css' %}" />
 
@@ -15,4 +15,3 @@
 {% else %}
 <p>No tickets are available.</p>
 {% endif %}
-
