@@ -5,15 +5,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polls</title>
-    {% comment %} <link
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    /> {% endcomment %}
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+    />
   </head>
-  <body>
-    <div class="container">{% block content%} {% endblock content %}</div>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-gray-800">MyProject</h1>
+        <nav class="flex space-x-4">
+          <a href="" class="text-gray-600 hover:text-indigo-500">Dashboard</a>
+          <a href="" class="text-gray-600 hover:text-indigo-500"
+            >Asset Console</a
+          >
+          <a href="" class="text-gray-600 hover:text-indigo-500"
+            >Knowledge Console</a
+          >
+          <a href="" class="text-gray-600 hover:text-indigo-500"
+            >Ticket Console</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      {% block content %} {% endblock content %}
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
