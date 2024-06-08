@@ -45,6 +45,8 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         return Question.objects.order_by("-pub_date")[:5]
+
+# belum selesai
     
 def Ticket(request):
     return render(request, 'tickets/ticket.html')
